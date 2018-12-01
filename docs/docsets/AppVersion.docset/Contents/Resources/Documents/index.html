@@ -91,13 +91,18 @@
           <section class="section">
             
             <h1 id='app-version-a-href-https-travis-ci-com-amebalabs-appversion-img-src-https-travis-ci-com-amebalabs-appversion-svg-branch-master-alt-build-status-a-img-src-https-img-shields-io-badge-swift-4-2-orange-svg-alt-swift-support-img-src-https-github-com-amebalabs-appversion-blob-master-docs-badge-svg-alt-documentation-a-href-http-cocoapods-org-pods-appversion-swift-img-src-https-img-shields-io-cocoapods-v-appversion-swift-svg-style-flat-alt-version-a-a-href-https-github-com-carthage-carthage-img-src-https-img-shields-io-badge-carthage-compatible-4bc51d-svg-style-flat-alt-carthage-compatible-a-a-href-https-swift-org-package-manager-img-src-https-img-shields-io-badge-swiftpm-compatible-brightgreen-svg-alt-swiftpm-compatible-a' class='heading'>📲  App Version  <a href="https://travis-ci.com/amebalabs/AppVersion"><img src="https://travis-ci.com/amebalabs/AppVersion.svg?branch=master" alt="Build Status"></a> <img src="https://img.shields.io/badge/Swift-4.2-orange.svg" alt="Swift Support"> <img src="https://github.com/amebalabs/AppVersion/blob/master/docs/badge.svg" alt="Documentation"> <a href="http://cocoapods.org/pods/AppVersion.swift"><img src="https://img.shields.io/cocoapods/v/AppVersion.swift.svg?style=flat" alt="Version"></a> <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a> <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg" alt="SwiftPM Compatible"></a></h1>
-<h3 id='detect-app-updates-notify-your-users' class='heading'>Detect app updates, notify your users.</h3>
+<h3 id='don-39-t-let-you-users-to-get-stuck-on-outdated-version-of-your-app' class='heading'>Don&rsquo;t let you users to get stuck on outdated version of your app.</h3>
 
-<p>Build with support for iOS and <a href="https://semver.org/"><strong>Semantic Versioning</strong></a></p>
-
-<p align=center>
-    <img src="Images/UITableView_short.png">
-</p>
+<ul>
+<li>[x] Automatic update tracking using <a href="https://semver.org/"><strong>Semantic Versioning</strong></a></li>
+<li>[x] Buil-in UI alerts</li>
+<li>[x] Rich set of delegate methods</li>
+<li>[x] <a href="https://appversion.ameba.co">Fully documented </a></li>
+<li>[x] Good test coverage</li>
+<li>[x] <a href="https://github.com/amebalabs/AppVersion/blob/master/.cloc.report">Small code base</a></li>
+<li>[x] No external dependencies</li>
+<li>[x] Available through all major package managers: Cocoapods, Cartage and Swift Package Manager</li>
+</ul>
 
 <hr>
 <h2 id='table-of-contents' class='heading'>Table of Contents</h2>
@@ -105,26 +110,45 @@
 <ul>
 <li><a href="https://github.com/amebalabs/AppVersion/#screenshots">Screenshots</a></li>
 <li><a href="https://github.com/amebalabs/AppVersion/#requirements">Requirements</a></li>
-<li><a href="(https://github.com/amebalabs/AppVersion/#installation)">Installation</a></li>
-<li><a href="https://github.com/amebalabs/AppVersion/#">Features</a>
+<li><a href="https://github.com/amebalabs/AppVersion/#nstallation">Installation</a></li>
+<li><a href="https://github.com/amebalabs/AppVersion/#features">Features</a>
 
 <ul>
-<li><a href="https://github.com/amebalabs/AppVersion/#">Delegates</a></li>
+<li><a href="https://github.com/amebalabs/AppVersion/#delegates">Delegates</a></li>
 </ul></li>
 <li><a href="https://github.com/amebalabs/AppVersion/#example">Example</a></li>
-<li><a href="">Attribution</a></li>
+<li><a href="https://github.com/amebalabs/AppVersion/#author">Author</a></li>
 </ul>
 
 <hr>
 <h2 id='screenshots' class='heading'>Screenshots</h2>
 <h3 id='update-ui-alerts' class='heading'>Update UI alerts</h3>
 
-<ul>
-<li><strong>Default</strong>: Unskippable alert</li>
+<ol>
 <li>Skippable alert</li>
+<li>Unskippable alert (Default)</li>
 <li>Blocking alert</li>
+</ol>
+
+<p align="center">
+  <img height="450" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/UIAlert.png">
+</p>
+<h3 id='custom-uilabel-and-uitableview-footer' class='heading'>Custom UILabel and UITableView footer</h3>
+
+<p align="center">
+  <img height="250" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/UITableView_short.png">
+</p>
+
+<ul>
+<li>Four formatting options available(<code><a href="Structs/AppInfo/VersionFormat.html">AppInfo.VersionFormat</a></code>):
+
+<ul>
+<li>Short(version only): 1.0.0</li>
+<li>Short with app name: AppVersion 1.0.0</li>
+<li>Long(version +  build): 1.0.0(42)</li>
+<li>Long with app name: 1.0.0(42)</li>
+</ul></li>
 </ul>
-<h3 id='app-store-information' class='heading'>App Store information</h3>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
@@ -146,47 +170,69 @@
 
 <p>Make sure to add <code>AppVersion.framework</code> to <q>Linked Frameworks and Libraries</q> and <q>copy-frameworks</q> Build Phases.</p>
 <h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
-<h2 id='features' class='heading'>Features</h2>
 
-<ul>
-<li>[x] Buil-in UI alerts</li>
-<li>[x] Rich set of delegate methods</li>
-<li>[x] Fully documented</li>
-<li>[x] Good test coverage</li>
-<li>[x] No external dependencies</li>
-<li>[x] <a href="https://github.com/amebalabs/AppVersion/master/.cloc.report">Small size</a></li>
-<li>[x] Available through all major package managers: Cocoapods, Cartage and Swift Package Manager</li>
-</ul>
+<p>TBD</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Setup AppVersion in your AppDelegate.swift, code is self-explanatory:</p>
+<pre class="highlight swift"><code>    <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
+                     <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">appVersion</span> <span class="o">=</span> <span class="kt">AppVersion</span><span class="o">.</span><span class="n">shared</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="n">updateFrequency</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">// I want to check for updates once a day</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="n">alertsEnabled</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// I want UI alerts, presenting update options</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="n">alertType</span> <span class="o">=</span> <span class="o">.</span><span class="n">skippable</span> <span class="c1">// I want UI alert to include "Skip" button</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="n">neverEnabled</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// I want UI alert to include "Never" butoon</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="n">alertPresentationStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">actionSheet</span> <span class="c1">// I want UI presented as an actionSheet</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="n">checkBeforeUpdatePresented</span> <span class="o">=</span> <span class="p">{</span> <span class="c1">// I want to present UI only if App Store version has more than 1 review and average rating is higher than 3</span>
+            <span class="nf">return</span> <span class="p">(</span><span class="n">appVersion</span><span class="o">.</span><span class="n">appStoreVersionInfo</span><span class="p">?</span><span class="o">.</span><span class="n">ratingsCount</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span>
+                <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">appVersion</span><span class="o">.</span><span class="n">appStoreVersionInfo</span><span class="p">?</span><span class="o">.</span><span class="n">averageRating</span> <span class="p">??</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span>
+        <span class="p">}</span>
+        <span class="n">appVersion</span><span class="o">.</span><span class="nf">run</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">true</span>
+    <span class="p">}</span>
+
+</code></pre>
 <h3 id='delegates' class='heading'>Delegates</h3>
-<h2 id='example' class='heading'>Example</h2>
-<h3 id='using-storyboard' class='heading'>Using Storyboard</h3>
 
-<p>Create AppVersion label in storyboard: Drag UILabel on your storyboard and set class to <code><a href="Classes/AppVersionLabel.html">AppVersionLabel</a></code>
-<img src="Images/Storyboard_class.png" alt="Storyboard1"></p>
+<p>Each meaningfull update tracking event provided as delegate (<code><a href="Protocols/AppVersionDelegate.html">AppVersionDelegate</a></code>). All delegates are optional, so you can implement only the one you need.
+Delegates can be used even if UI Alerts are disabled, for example you can choose to implement your own UI.
+Please refer to documentation for more details.</p>
+<h3 id='uilabel-and-uitableview' class='heading'>UILabel and UITableView</h3>
+<h4 id='using-storyboard' class='heading'>Using Storyboard</h4>
+
+<p>Create AppVersion label in storyboard: Drag UILabel on your storyboard and set class to <code><a href="Classes/AppVersionLabel.html">AppVersionLabel</a></code></p>
+
+<p><img height="180" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/Storyboard_class.png"></p>
 
 <p>After that set format name in Attributes Inpector:
-<img src="Images/Storyboard_format.png" alt="Storyboard2"></p>
-<h3 id='create-code-appversionlabel-code-programatically' class='heading'>Create  <code><a href="Classes/AppVersionLabel.html">AppVersionLabel</a></code> programatically:</h3>
+<img height="130" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/Storyboard_format.png"></p>
+<h4 id='create-code-appversionlabel-code-programatically' class='heading'>Create  <code><a href="Classes/AppVersionLabel.html">AppVersionLabel</a></code> programatically:</h4>
 <pre class="highlight plaintext"><code>let versionLabel = AppVersionLabel()
 versionLabel.format = format
 versionLabel.textAlignment = .center
 versionLabel.textColor = .red
 </code></pre>
-<h3 id='add-version-in-uitableview-footer' class='heading'>Add version in UITableView footer:</h3>
+<h4 id='add-version-in-uitableview-footer' class='heading'>Add version in UITableView footer:</h4>
 <pre class="highlight swift"><code><span class="n">tableView</span><span class="o">.</span><span class="nf">addVersionFooter</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="o">.</span><span class="n">longWithName</span><span class="p">)</span>
 </code></pre>
 
 <p>or</p>
 <pre class="highlight plaintext"><code>tableView.addVersionFooter(with: .long, alignment: .right, textColor: .lightGray, footerHeight: 22)
 </code></pre>
-<h2 id='license' class='heading'>License</h2>
+<h2 id='author' class='heading'>Author</h2>
+
+<ul>
+<li>Website: <a href="https://ameba.co">Ameba</a></li>
+<li>Gtihub <a href="https://github.com/amebalabs/">@amebalabs</a>
+## License</li>
+</ul>
 
 <p>AppVersion is available under the MIT license. See the LICENSE file for more info.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/amebalabs/AppVersion" target="_blank" rel="external">Kate Belinskaya</a>. All rights reserved. (Last updated: 2018-11-30)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/amebalabs/AppVersion" target="_blank" rel="external">Kate Belinskaya</a>. All rights reserved. (Last updated: 2018-12-01)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

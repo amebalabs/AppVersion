@@ -7,7 +7,7 @@
 - [x] Rich set of delegate methods
 - [x] [Fully documented ](https://appversion.ameba.co)
 - [x] Good test coverage
-- [x] [Small code base](https://github.com/amebalabs/AppVersion/master/.cloc.report)
+- [x] [Small code base](https://github.com/amebalabs/AppVersion/blob/master/.cloc.report)
 - [x] No external dependencies
 - [x] Available through all major package managers: Cocoapods, Cartage and Swift Package Manager 
 
@@ -32,12 +32,12 @@
 3. Blocking alert
 
 <p align="center">
-  <img height="500" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/UIAlert.png">
+  <img height="450" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/UIAlert.png">
 </p>
 
 ### Custom UILabel and UITableView footer
 <p align="center">
-  <img height="300" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/UITableView_short.png">
+  <img height="250" src="https://raw.githubusercontent.com/amebalabs/AppVersion/master/Images/UITableView_short.png">
 </p>
 
 - Four formatting options available(`AppInfo.VersionFormat`):
