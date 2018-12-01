@@ -33,6 +33,7 @@
 		39C1C9AA21B0C9AB0003E274 /* .jazzy.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 39C1C9A921B0C9AB0003E274 /* .jazzy.yaml */; };
 		39C4EC8D21A9DE1600DCEDF1 /* AppVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3946C69121A9CEAE009C46CC /* AppVersion.framework */; };
 		39C4EC8E21A9DE1600DCEDF1 /* AppVersion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3946C69121A9CEAE009C46CC /* AppVersion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		443DACF421B308AF00B562A3 /* AppVersion.swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 443DACF321B308AE00B562A3 /* AppVersion.swift.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		39C1C9A921B0C9AB0003E274 /* .jazzy.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = "<group>"; };
 		39F0BB3E21AB0306001CAAF0 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		39F0BB3F21AB0306001CAAF0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		443DACF321B308AE00B562A3 /* AppVersion.swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppVersion.swift.podspec; sourceTree = "<group>"; };
 		44F028B821AA079500E0C6B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				39C1C9A921B0C9AB0003E274 /* .jazzy.yaml */,
 				44F028B821AA079500E0C6B2 /* README.md */,
 				390243BD21A9F23700A40F94 /* AppVersion.podspec */,
+				443DACF321B308AE00B562A3 /* AppVersion.swift.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443DACF421B308AF00B562A3 /* AppVersion.swift.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
