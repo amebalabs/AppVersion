@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AppVersion  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="AppVersion  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">AppVersion Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">AppVersion Reference</a>
+        <img id="carat" src="img/carat.png" />
+        AppVersion  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AppVersion.html">AppVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppVersion/AlertType.html">– AlertType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppVersionLabel.html">AppVersionLabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/AppVersionDelegate.html">AppVersionDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AppInfo/VersionFormat.html">– VersionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AppStoreVersion.html">AppStoreVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Version.html">Version</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Version/UpdateType.html">– UpdateType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10AppVersion08SemanticB0a">SemanticVersion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='app-version-a-href-https-travis-ci-com-amebalabs-appversion-img-src-https-travis-ci-com-amebalabs-appversion-svg-branch-master-alt-build-status-a-img-src-https-img-shields-io-badge-swift-4-2-orange-svg-alt-swift-support-img-src-https-github-com-amebalabs-appversion-blob-master-docs-badge-svg-alt-documentation-a-href-http-cocoapods-org-pods-appversion-swift-img-src-https-img-shields-io-cocoapods-v-appversion-swift-svg-style-flat-alt-version-a-a-href-https-github-com-carthage-carthage-img-src-https-img-shields-io-badge-carthage-compatible-4bc51d-svg-style-flat-alt-carthage-compatible-a-a-href-https-swift-org-package-manager-img-src-https-img-shields-io-badge-swiftpm-compatible-brightgreen-svg-alt-swiftpm-compatible-a' class='heading'>📲  App Version  <a href="https://travis-ci.com/amebalabs/AppVersion"><img src="https://travis-ci.com/amebalabs/AppVersion.svg?branch=master" alt="Build Status"></a> <img src="https://img.shields.io/badge/Swift-4.2-orange.svg" alt="Swift Support"> <img src="https://github.com/amebalabs/AppVersion/blob/master/docs/badge.svg" alt="Documentation"> <a href="http://cocoapods.org/pods/AppVersion.swift"><img src="https://img.shields.io/cocoapods/v/AppVersion.swift.svg?style=flat" alt="Version"></a> <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a> <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg" alt="SwiftPM Compatible"></a></h1>
+<h3 id='detect-app-updates-notify-your-users' class='heading'>Detect app updates, notify your users.</h3>
+
+<p>Build with support for iOS and <a href="https://semver.org/"><strong>Semantic Versioning</strong></a></p>
+
+<p align=center>
+    <img src="Images/UITableView_short.png">
+</p>
+
+<hr>
+<h2 id='table-of-contents' class='heading'>Table of Contents</h2>
+
+<ul>
+<li><a href="https://github.com/amebalabs/AppVersion/#screenshots">Screenshots</a></li>
+<li><a href="https://github.com/amebalabs/AppVersion/#requirements">Requirements</a></li>
+<li><a href="(https://github.com/amebalabs/AppVersion/#installation)">Installation</a></li>
+<li><a href="https://github.com/amebalabs/AppVersion/#">Features</a>
+
+<ul>
+<li><a href="https://github.com/amebalabs/AppVersion/#">Delegates</a></li>
+</ul></li>
+<li><a href="https://github.com/amebalabs/AppVersion/#example">Example</a></li>
+<li><a href="">Attribution</a></li>
+</ul>
+
+<hr>
+<h2 id='screenshots' class='heading'>Screenshots</h2>
+<h3 id='update-ui-alerts' class='heading'>Update UI alerts</h3>
+
+<ul>
+<li><strong>Default</strong>: Unskippable alert</li>
+<li>Skippable alert</li>
+<li>Blocking alert</li>
+</ul>
+<h3 id='app-store-information' class='heading'>App Store information</h3>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>Swift 4.2</li>
+<li>Xcode 10 or greater</li>
+<li>iOS 11.0 or greater</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>AppVersion is available through <a href="http://cocoapods.org">CocoaPods</a>. To install it add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"AppVersion.swift"</span>
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>If you’re using <a href="https://github.com/Carthage/Carthage">Carthage</a>,  add AppVersion to your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "amebalabs/AppVersion"
+</code></pre>
+
+<p>Make sure to add <code>AppVersion.framework</code> to <q>Linked Frameworks and Libraries</q> and <q>copy-frameworks</q> Build Phases.</p>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] Buil-in UI alerts</li>
+<li>[x] Rich set of delegate methods</li>
+<li>[x] Fully documented</li>
+<li>[x] Good test coverage</li>
+<li>[x] No external dependencies</li>
+<li>[x] <a href="https://github.com/amebalabs/AppVersion/master/.cloc.report">Small size</a></li>
+<li>[x] Available through all major package managers: Cocoapods, Cartage and Swift Package Manager</li>
+</ul>
+<h3 id='delegates' class='heading'>Delegates</h3>
+<h2 id='example' class='heading'>Example</h2>
+<h3 id='using-storyboard' class='heading'>Using Storyboard</h3>
+
+<p>Create AppVersion label in storyboard: Drag UILabel on your storyboard and set class to <code><a href="Classes/AppVersionLabel.html">AppVersionLabel</a></code>
+<img src="Images/Storyboard_class.png" alt="Storyboard1"></p>
+
+<p>After that set format name in Attributes Inpector:
+<img src="Images/Storyboard_format.png" alt="Storyboard2"></p>
+<h3 id='create-code-appversionlabel-code-programatically' class='heading'>Create  <code><a href="Classes/AppVersionLabel.html">AppVersionLabel</a></code> programatically:</h3>
+<pre class="highlight plaintext"><code>let versionLabel = AppVersionLabel()
+versionLabel.format = format
+versionLabel.textAlignment = .center
+versionLabel.textColor = .red
+</code></pre>
+<h3 id='add-version-in-uitableview-footer' class='heading'>Add version in UITableView footer:</h3>
+<pre class="highlight swift"><code><span class="n">tableView</span><span class="o">.</span><span class="nf">addVersionFooter</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="o">.</span><span class="n">longWithName</span><span class="p">)</span>
+</code></pre>
+
+<p>or</p>
+<pre class="highlight plaintext"><code>tableView.addVersionFooter(with: .long, alignment: .right, textColor: .lightGray, footerHeight: 22)
+</code></pre>
+<h2 id='license' class='heading'>License</h2>
+
+<p>AppVersion is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/amebalabs/AppVersion" target="_blank" rel="external">Kate Belinskaya</a>. All rights reserved. (Last updated: 2018-11-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

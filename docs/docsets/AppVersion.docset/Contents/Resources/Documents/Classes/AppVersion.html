@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AppVersion Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AppVersion" class="dashAnchor"></a>
+    <a title="AppVersion Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AppVersion Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AppVersion Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AppVersion Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppVersion.html">AppVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppVersion/AlertType.html">– AlertType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppVersionLabel.html">AppVersionLabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AppVersionDelegate.html">AppVersionDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppInfo/VersionFormat.html">– VersionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppStoreVersion.html">AppStoreVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version/UpdateType.html">– UpdateType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10AppVersion08SemanticB0a">SemanticVersion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AppVersion</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">AppVersion</span></code></pre>
+
+                </div>
+              </div>
+            <p>AppVersion provides a set of properties and methods to configure app update tracking behaviour.
+Can be used as singleton through shared property, or through a set of static variables and methods</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC9AlertTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/AlertType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC9AlertTypeO">AlertType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update-suggestion UI Alert Type, used to set the desired update workflow</p>
+
+                        <a href="../Classes/AppVersion/AlertType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AlertType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC6sharedABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC6sharedABvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>AppVersion Singleton</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">AppVersion</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC8delegateAA0aB8Delegate_pSgXwvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC8delegateAA0aB8Delegate_pSgXwvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate chaining AppVersionDelegate methods</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AppVersionDelegate.html">AppVersionDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC15updateFrequencySuvp"></a>
+                    <a name="//apple_ref/swift/Property/updateFrequency" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC15updateFrequencySuvp">updateFrequency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the frequency of App Store update requests in <strong>days</strong>, default: 0 - means with each app launch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">updateFrequency</span><span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC26checkBeforeUpdatePresentedSbycvp"></a>
+                    <a name="//apple_ref/swift/Property/checkBeforeUpdatePresented" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC26checkBeforeUpdatePresentedSbycvp">checkBeforeUpdatePresented</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks you want to make before presenting update-suggesting UI. If returns <strong>true</strong> - UI will be presented, if <strong>false</strong> UI will be supressed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">checkBeforeUpdatePresented</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC08appStoreB4InfoAA0adB0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/appStoreVersionInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC08appStoreB4InfoAA0adB0VSgvp">appStoreVersionInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Inforfmation about the latest version available in App Store</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">appStoreVersionInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/AppStoreVersion.html">AppStoreVersion</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC12neverEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/neverEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC12neverEnabledSbvp">neverEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows user to silence update-suggestion UI forever, i.e. alert will be never shown again. <strong>False</strong> by default</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">neverEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC13alertsEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/alertsEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC13alertsEnabledSbvp">alertsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables update-suggestion UI Alerts. <strong>False</strong> by default</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alertsEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC19minorAlertsDisabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/minorAlertsDisabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC19minorAlertsDisabledSbvp">minorAlertsDisabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables update-suggestion UI Alerts for <strong>Minor</strong> updates. <strong>False</strong> by default</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minorAlertsDisabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC19patchAlertsDisabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/patchAlertsDisabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC19patchAlertsDisabledSbvp">patchAlertsDisabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables update-suggestion UI Alerts for <strong>Patch</strong> updates. <strong>False</strong> by default</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">patchAlertsDisabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC22alertPresentationStyleSo017UIAlertControllerE0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/alertPresentationStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC22alertPresentationStyleSo017UIAlertControllerE0Vvp">alertPresentationStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UIAlertController alert presentation style. <strong>alert</strong> by default</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alertPresentationStyle</span><span class="p">:</span> <span class="kt">UIAlertController</span><span class="o">.</span><span class="kt">Style</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC9alertTypeAB05AlertD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/alertType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC9alertTypeAB05AlertD0Ovp">alertType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update-suggestion UI Alert Type, <strong>unskippable</strong> by default. Rewrites alertTypeMajor,alertTypeMinor and alertTypePatch when set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alertType</span><span class="p">:</span> <span class="kt">AppVersion</span><span class="o">.</span><span class="kt"><a href="../Classes/AppVersion/AlertType.html">AlertType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC14alertTypeMajorAB05AlertD0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/alertTypeMajor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC14alertTypeMajorAB05AlertD0OSgvp">alertTypeMajor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update-suggestion UI Alert Type for <strong>Major</strong> update, <strong>unskippable</strong> by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alertTypeMajor</span><span class="p">:</span> <span class="kt">AppVersion</span><span class="o">.</span><span class="kt"><a href="../Classes/AppVersion/AlertType.html">AlertType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC14alertTypeMinorAB05AlertD0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/alertTypeMinor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC14alertTypeMinorAB05AlertD0OSgvp">alertTypeMinor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update-suggestion UI Alert Type for <strong>Minor</strong> update, <strong>unskippable</strong> by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alertTypeMinor</span><span class="p">:</span> <span class="kt">AppVersion</span><span class="o">.</span><span class="kt"><a href="../Classes/AppVersion/AlertType.html">AlertType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC14alertTypePatchAB05AlertD0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/alertTypePatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC14alertTypePatchAB05AlertD0OSgvp">alertTypePatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update-suggestion UI Alert Type for <strong>Patch</strong> update, <strong>unskippable</strong> by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">alertTypePatch</span><span class="p">:</span> <span class="kt">AppVersion</span><span class="o">.</span><span class="kt"><a href="../Classes/AppVersion/AlertType.html">AlertType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC3runyyF"></a>
+                    <a name="//apple_ref/swift/Method/run()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC3runyyF">run()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes AppVersion, call it from application(_ application: UIApplication,didFinishLaunchingWithOptions launchOptions:&hellip;) delegate in your AppDelegate
+Logs app launch and checks for an update in App Store</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC05checkA17StoreForUpdateNowyyF"></a>
+                    <a name="//apple_ref/swift/Method/checkAppStoreForUpdateNow()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC05checkA17StoreForUpdateNowyyF">checkAppStoreForUpdateNow()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks for update, non-blocking. Use it when you need to force the check ignoring <code><a href="../Classes/AppVersion.html#/s:10AppVersionAAC15updateFrequencySuvp">updateFrequency</a></code> setting</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">checkAppStoreForUpdateNow</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC05resetaB5StateyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetAppVersionState()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC05resetaB5StateyyF">resetAppVersionState()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets all persistance information stored by AppVersion: version launch history and user preferences(skip, never)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetAppVersionState</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Launch%20history%20and%20user%20preferences"></a>
+                <a name="//apple_ref/swift/Section/Launch history and user preferences" class="dashAnchor"></a>
+                <a href="#/Launch%20history%20and%20user%20preferences">
+                  <h3 class="section-name">Launch history and user preferences</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC13lastCheckDate10Foundation0E0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastCheckDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC13lastCheckDate10Foundation0E0VSgvp">lastCheckDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date on which last check for update was performed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastCheckDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC04skipB0AA0B0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/skipVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC04skipB0AA0B0VSgvp">skipVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update version which user decided to skip</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">skipVersion</span><span class="p">:</span> <span class="kt"><a href="../Structs/Version.html">Version</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC14versionHistorySDyAA0B0VSiGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/versionHistory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC14versionHistorySDyAA0B0VSiGSgvp">versionHistory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Version history installed &amp; launched on this device, contains launch  counts for each version.
+Not preserved between reinstalls</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">versionHistory</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Version.html">Version</a></span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC015launchesForThisB0Sivp"></a>
+                    <a name="//apple_ref/swift/Property/launchesForThisVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC015launchesForThisB0Sivp">launchesForThisVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns number of launches for this version</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">launchesForThisVersion</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersionAAC14neverShowAlertSbvp"></a>
+                    <a name="//apple_ref/swift/Property/neverShowAlert" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersionAAC14neverShowAlertSbvp">neverShowAlert</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates if user asked to silence update-suggesting UI alerts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">neverShowAlert</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/amebalabs/AppVersion" target="_blank" rel="external">Kate Belinskaya</a>. All rights reserved. (Last updated: 2018-11-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

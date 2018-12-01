@@ -1,0 +1,6 @@
+xcodebuild_arguments:
+- "-project"
+- "AppVersion.xcodeproj"
+- "-scheme"
+- "AppVersion"
+module: "AppVersion"

@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "678a00f412ee4335f7c9192e12722466"
+build_time: [1543456594, 25390000]
+inputs:
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/ Extensions/UITableView+AppVersion.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/UIKit/AppVersionLabel.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/AppStoreVersion.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/AppVersion.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/Version.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/ Extensions/UserDefaults+AppVersion.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/AppVersionDelegate.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/ Extensions/UIAlertController+AppVersion.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/ Extensions/DateFormatter+ISO8601Full.swift": [9223372036, 854775807]
+  "/Users/melonamin/Library/Mobile Documents/com~apple~CloudDocs/Projects/amebalabs/AppVersion/AppVersion/Source/ Extensions/UIView+Extension.swift": [9223372036, 854775807]

@@ -1,0 +1,11 @@
+framework module AppVersion {
+  umbrella header "AppVersion.h"
+
+  export *
+  module * { export * }
+}
+
+module AppVersion.Swift {
+    header "AppVersion-Swift.h"
+    requires objc
+}

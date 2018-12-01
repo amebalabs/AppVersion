@@ -1,0 +1,10 @@
+framework module AppVersion {
+  umbrella header "AppVersion.h"
+
+  export *
+  module * { export * }
+}
+
+module AppVersion.__Swift {
+    exclude header "AppVersion-Swift.h"
+}

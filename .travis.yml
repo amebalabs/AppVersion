@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10.1
+xcode_project: AppVersion.xcodeproj
+xcode_scheme: AppVersion
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XS

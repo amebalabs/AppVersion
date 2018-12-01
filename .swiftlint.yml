@@ -1,0 +1,14 @@
+reporter: "xcode"
+
+included:
+  - AppVersion/Source/
+
+disabled_rules:
+  - nesting
+
+line_length:
+  - 180
+
+identifier_name:
+    min_length: 2
+    max_length: 30

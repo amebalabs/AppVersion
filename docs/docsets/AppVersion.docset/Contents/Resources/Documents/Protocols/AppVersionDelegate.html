@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AppVersionDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/AppVersionDelegate" class="dashAnchor"></a>
+    <a title="AppVersionDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AppVersion Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AppVersion Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AppVersionDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppVersion.html">AppVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppVersion/AlertType.html">– AlertType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppVersionLabel.html">AppVersionLabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AppVersionDelegate.html">AppVersionDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppInfo/VersionFormat.html">– VersionFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppStoreVersion.html">AppStoreVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version.html">Version</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Version/UpdateType.html">– UpdateType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10AppVersion08SemanticB0a">SemanticVersion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AppVersionDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AppVersionDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate methods which allow expose a set of events to control update checking workflow</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appb13CheckedForNewB0yyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionCheckedForNewVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appb13CheckedForNewB0yyF">appVersionCheckedForNewVersion()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Succesefull check for new version in App Store</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionCheckedForNewVersion</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appbB11CheckFailedyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionVersionCheckFailed()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appbB11CheckFailedyyF">appVersionVersionCheckFailed()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failed check for new version in App Store</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionVersionCheckFailed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appb3NewB8DetectedyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionNewVersionDetected()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appb3NewB8DetectedyyF">appVersionNewVersionDetected()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>New version detected in App Store. Fires for all update types: Major, Minor and Patch</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionNewVersionDetected</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appb8NewMajorB8DetectedyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionNewMajorVersionDetected()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appb8NewMajorB8DetectedyyF">appVersionNewMajorVersionDetected()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>New <strong>MAJOR</strong> version detected in App Store</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionNewMajorVersionDetected</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appb8NewMinorB8DetectedyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionNewMinorVersionDetected()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appb8NewMinorB8DetectedyyF">appVersionNewMinorVersionDetected()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>New <strong>Minor</strong> version detected in App Store</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionNewMinorVersionDetected</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appb8NewPatchB8DetectedyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionNewPatchVersionDetected()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appb8NewPatchB8DetectedyyF">appVersionNewPatchVersionDetected()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>New <strong>Patch</strong> version detected in App Store</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionNewPatchVersionDetected</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appB20SuppressedBySkipFlagyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionSuppressedBySkipFlag()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appB20SuppressedBySkipFlagyyF">appVersionSuppressedBySkipFlag()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update <q>new version available</q> delegates were suppressed by <q>Skip this Update</q> flag</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionSuppressedBySkipFlag</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appb18FirstLaunchForThisB0yyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionFirstLaunchForThisVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appb18FirstLaunchForThisB0yyF">appVersionFirstLaunchForThisVersion()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current app version launched for the first time</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionFirstLaunchForThisVersion</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appB12DidPresentUIyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionDidPresentUI()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appB12DidPresentUIyyF">appVersionDidPresentUI()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update-suggesting UI(alert) was presented on screen</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionDidPresentUI</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appB17UserPressedUpdateyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionUserPressedUpdate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appB17UserPressedUpdateyyF">appVersionUserPressedUpdate()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User accepted update proposal, i.e. pressed Update button</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionUserPressedUpdate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appB15UserPressedSkipyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionUserPressedSkip()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appB15UserPressedSkipyyF">appVersionUserPressedSkip()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User Skipped proposed update, i.e pressed SKip button</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionUserPressedSkip</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appB17UserPressedCancelyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionUserPressedCancel()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appB17UserPressedCancelyyF">appVersionUserPressedCancel()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User dismissed update proposal, i.e. pressed Cancel button</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionUserPressedCancel</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppVersion0aB8DelegateP03appB23UserPressedNeverPresentyyF"></a>
+                    <a name="//apple_ref/swift/Method/appVersionUserPressedNeverPresent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppVersion0aB8DelegateP03appB23UserPressedNeverPresentyyF">appVersionUserPressedNeverPresent()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User requested to silence update proposals forever, i.e.  pressed Never button</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">appVersionUserPressedNeverPresent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/amebalabs/AppVersion" target="_blank" rel="external">Kate Belinskaya</a>. All rights reserved. (Last updated: 2018-11-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
