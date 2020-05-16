@@ -87,6 +87,8 @@ open class AppVersion {
     public var alertTypeMinor: AlertType?
     /// Update-suggestion UI Alert Type for **Patch** update, **unskippable** by default.
     public var alertTypePatch: AlertType?
+    /// add region Code example "IN" for INDIA, to check the version for specific region or leave it for default
+    public var regionCode: String?
 
     /// Initializes AppVersion, call it from application(_ application: UIApplication,didFinishLaunchingWithOptions launchOptions:...) delegate in your AppDelegate
     /// Logs app launch and checks for an update in App Store
@@ -103,7 +105,7 @@ open class AppVersion {
             }
         }
 
-        AppStoreAPI.requestVersion { version, error in
+        AppStoreAPI.requestVersion(for: regionCode) { version, error in
             if let error = error {
                 print(error)
                 return

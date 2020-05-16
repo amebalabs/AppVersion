@@ -23,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return (appVersion.appStoreVersionInfo?.ratingsCount ?? 0) > 1
                 && (appVersion.appStoreVersionInfo?.averageRating ?? 0) > 3
         }
+        // I want to check the update for current region only
+        appVersion.regionCode = Locale.current.regionCode!
+        
         appVersion.run()
+        
         return true
     }
 
