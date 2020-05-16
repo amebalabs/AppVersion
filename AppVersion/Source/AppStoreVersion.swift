@@ -46,9 +46,14 @@ struct AppStoreAPI: Decodable {
 
     private let results: [AppStoreVersion]
 
-    static func requestVersion(_ completion: @escaping (AppStoreVersion?, Error?) -> Void) {
+    static func requestVersion(for region: String?, _ completion: @escaping (AppStoreVersion?, Error?) -> Void) {
         let session = URLSession(configuration: .default)
-        let endpoint = URL(string: "http://itunes.apple.com/lookup?bundleId=\(AppInfo.bundleId)")!
+        // CREATING ENP URL BASE ON BUNDLE-ID AND CONTRY.
+        var queryItem = [URLQueryItem(name: "bundleId", value: AppInfo.bundleId)]
+        if let regionCode = region {
+            queryItem.append(URLQueryItem(name: "country", value: regionCode))
+        }
+        let endpoint = getLookupURL(with: queryItem)!
 
         var urlRequest = URLRequest(url: endpoint) //config
         urlRequest.httpMethod = "GET"

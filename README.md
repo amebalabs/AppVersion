@@ -1,4 +1,4 @@
-# 📲  App Version  [![Build Status](https://travis-ci.com/amebalabs/AppVersion.svg?branch=master)](https://travis-ci.com/amebalabs/AppVersion) ![Swift Support](https://img.shields.io/badge/Swift-4.2-orange.svg) ![Documentation](https://github.com/amebalabs/AppVersion/blob/master/docs/badge.svg) [![Version](https://img.shields.io/cocoapods/v/AppVersion.swift.svg?style=flat)](http://cocoapods.org/pods/AppVersion.swift) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+# 📲  App Version  [![Build Status](https://travis-ci.com/amebalabs/AppVersion.svg?branch=master)](https://travis-ci.com/amebalabs/AppVersion) ![Swift Support](https://img.shields.io/badge/Swift-5.1-orange.svg) ![Documentation](https://github.com/amebalabs/AppVersion/blob/master/docs/badge.svg) [![Version](https://img.shields.io/cocoapods/v/AppVersion.swift.svg?style=flat)](http://cocoapods.org/pods/AppVersion.swift) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
 ### Don't let you users to get stuck on outdated version of your app.
 
@@ -92,6 +92,7 @@ Setup AppVersion in your AppDelegate.swift, code is self-explanatory:
             return (appVersion.appStoreVersionInfo?.ratingsCount ?? 0) > 1
                 && (appVersion.appStoreVersionInfo?.averageRating ?? 0) > 3
         }
+        appVersion.regionCode = Locale.current.regionCode! // I want to check the update for current region only
         appVersion.run()
         return true
     }
