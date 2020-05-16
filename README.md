@@ -92,6 +92,7 @@ Setup AppVersion in your AppDelegate.swift, code is self-explanatory:
             return (appVersion.appStoreVersionInfo?.ratingsCount ?? 0) > 1
                 && (appVersion.appStoreVersionInfo?.averageRating ?? 0) > 3
         }
+        appVersion.regionCode = Locale.current.regionCode! // I want to check the update for current region only
         appVersion.run()
         return true
     }
