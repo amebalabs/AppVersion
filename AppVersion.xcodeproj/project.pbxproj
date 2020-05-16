@@ -317,18 +317,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = co.ameba;
 				TargetAttributes = {
 					3946C69021A9CEAE009C46CC = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1140;
 					};
 					3946C69921A9CEAE009C46CC = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					3946C6B721A9CF56009C46CC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -637,7 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -658,7 +659,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -687,7 +688,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -747,7 +748,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yelp.yelpiphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -769,7 +770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yelp.yelpiphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

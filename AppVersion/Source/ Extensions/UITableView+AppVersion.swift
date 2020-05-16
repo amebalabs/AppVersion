@@ -17,7 +17,7 @@ public extension UITableView {
         - textColor: Label text color, default: UIColor.gray
         - footerHeight: Label text color, default: 20
      */
-    public func addVersionFooter(with format: AppInfo.VersionFormat,
+    func addVersionFooter(with format: AppInfo.VersionFormat,
                                  alignment: NSTextAlignment = .center,
                                  textColor: UIColor = UIColor.gray,
                                  footerHeight: CGFloat = 22) {
