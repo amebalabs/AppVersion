@@ -9,7 +9,7 @@
 - [x] Good test coverage
 - [x] [Small code base](https://github.com/amebalabs/AppVersion/blob/master/.cloc.report)
 - [x] No external dependencies
-- [x] Available through all major package managers: Cocoapods, Cartage and Swift Package Manager 
+- [x] Available through all major package managers: Cocoapods, Carthage and Swift Package Manager 
 
 ---
 
