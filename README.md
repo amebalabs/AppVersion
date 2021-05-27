@@ -99,7 +99,7 @@ Setup AppVersion in your AppDelegate.swift, code is self-explanatory:
 ```
 ### Delegates
 
-Each meaningfull update tracking event provided as delegate (`AppVersionDelegate`). All delegates are optional, so you can implement only the one you need.
+Each meaningful update tracking event provided as delegate (`AppVersionDelegate`). All delegates are optional, so you can implement only the one you need.
 Delegates can be used even if UI Alerts are disabled, for example you can choose to implement your own UI.
 Please refer to documentation for more details.
 
@@ -132,7 +132,7 @@ tableView.addVersionFooter(with: .long, alignment: .right, textColor: .lightGray
 ```
 ## Author
 - Website: [Ameba](https://ameba.co) 
-- Gtihub [@amebalabs](https://github.com/amebalabs/)
+- Github [@amebalabs](https://github.com/amebalabs/)
 ## License
 
 AppVersion is available under the MIT license. See the LICENSE file for more info.
